@@ -1,0 +1,107 @@
+<Window x:Class="GeniaText.ImportPreviewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Предпросмотр импорта — GeniaText" Width="780" Height="540"
+        MinWidth="680" MinHeight="450" WindowStartupLocation="CenterOwner"
+        Background="{StaticResource WindowBackground}"
+        Icon="pack://application:,,,/Assets/GeniaText.ico">
+    <Grid Margin="16,14,16,14">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="58"/>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="44"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Предпросмотр импорта" FontSize="20" FontWeight="SemiBold"/>
+            <TextBlock Text="Файл проверен. До выбора действия текущая база не меняется."
+                       Margin="0,3,0,0" FontSize="11.5" Foreground="{StaticResource TextSecondary}"/>
+        </StackPanel>
+
+        <Border Grid.Row="1" Background="{StaticResource Win7SubtlePanelBrush}"
+                BorderBrush="{StaticResource BorderBrushSoft}" BorderThickness="1" Padding="10,7">
+            <TextBlock x:Name="SummaryText" VerticalAlignment="Center" TextWrapping="Wrap"/>
+        </Border>
+
+        <Border Grid.Row="2" Margin="0,10,0,0" Background="White"
+                BorderBrush="{StaticResource Win7ControlBorderBrush}" BorderThickness="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="29"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Background="{StaticResource Win7SubtlePanelBrush}"
+                        BorderBrush="{StaticResource Win7SeparatorBrush}" BorderThickness="0,0,0,1">
+                    <Grid Margin="9,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="116"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="180"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="Результат" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                        <TextBlock Grid.Column="1" Text="Фраза" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                        <TextBlock Grid.Column="2" Text="Категория" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                    </Grid>
+                </Border>
+                <ListBox x:Name="PreviewList" Grid.Row="1" BorderThickness="0" Background="White"
+                         ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    <ListBox.Resources>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            <Setter Property="Padding" Value="0"/>
+                            <Setter Property="Margin" Value="0"/>
+                            <Setter Property="BorderBrush" Value="{StaticResource Win7SeparatorBrush}"/>
+                            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="ListBoxItem">
+                                        <Border x:Name="RowBorder" Background="{TemplateBinding Background}"
+                                                BorderBrush="{TemplateBinding BorderBrush}"
+                                                BorderThickness="{TemplateBinding BorderThickness}" Padding="9,6">
+                                            <ContentPresenter/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="RowBorder" Property="Background" Value="{StaticResource Win7HoverBrush}"/>
+                                            </Trigger>
+                                            <Trigger Property="IsSelected" Value="True">
+                                                <Setter TargetName="RowBorder" Property="Background" Value="{StaticResource Win7SelectionBrush}"/>
+                                                <Setter TargetName="RowBorder" Property="BorderBrush" Value="{StaticResource Win7SelectionBorderBrush}"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ListBox.Resources>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="116"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="180"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="{Binding StatusLabel}" TextTrimming="CharacterEllipsis"/>
+                                <TextBlock Grid.Column="1" Text="{Binding DisplayTitle}" TextTrimming="CharacterEllipsis" Margin="0,0,12,0"/>
+                                <TextBlock Grid.Column="2" Text="{Binding Category}" TextTrimming="CharacterEllipsis"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </Border>
+
+        <TextBlock Grid.Row="3" Margin="0,9,0,0" Foreground="{StaticResource TextSecondary}"
+                   FontSize="11" TextWrapping="Wrap" VerticalAlignment="Top"
+                   Text="Предпросмотр информационный: выбранное действие применит весь проверенный файл. При добавлении конфликтующие ID будут заменены безопасными новыми ID."/>
+
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Button Style="{StaticResource DefaultButton}" Content="Отмена" MinWidth="82" Margin="0,0,7,0" Click="Cancel_Click"/>
+            <Button Style="{StaticResource DefaultButton}" Content="Заменить текущие" MinWidth="126" Margin="0,0,7,0" Click="Replace_Click"/>
+            <Button Style="{StaticResource PrimaryButton}" Content="Добавить к текущим" MinWidth="132" Click="Append_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
