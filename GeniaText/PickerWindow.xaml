@@ -164,7 +164,7 @@
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock VerticalAlignment="Center" FontSize="11" Foreground="{StaticResource TextSecondary}"
-                           Text="↑↓ — выбор   Enter / Space — вставить   Esc — закрыть"/>
+                           Text="↑↓ — выбор   Enter / Space — вставить   Esc — скрыть"/>
                 <Button Grid.Column="1" Style="{StaticResource PrimaryButton}" Content="Вставить"
                         MinWidth="90" Height="32" Padding="12,5" Click="Insert_Click"/>
             </Grid>
