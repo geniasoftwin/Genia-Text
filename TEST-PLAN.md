@@ -1,4 +1,4 @@
-# GeniaText 0.7.0-beta.1 hard test plan
+# GeniaText 0.7.0-RC1 hard test plan
 
 The full 0.6.5 Core regression remains mandatory. Run it first with every optional module OFF, then test Editor Pro and each Safety Pack module separately using `BETA-TEST-CHECKLIST.md`.
 
@@ -118,7 +118,7 @@ Create categories `Web` and `Chat`, then rules:
 - Inspect `geniatext.log`: it must not contain phrase text or clipboard content.
 
 ## Release rule
-A 0.7.0 beta field build is accepted for continued testing only if section A is green and section B has no regression. Optional module defects block promotion, but they must never break the core path with the module disabled.
+The 0.7.0 RC1 build is accepted only if section A is green and section B has no regression. Optional module defects block promotion to Stable, but they must never break the core path with the module disabled.
 
 ## Final 0.6.5 gate additions
 - First-run settings save before Picker has ever been moved/resized (covers NaN placement serialization).

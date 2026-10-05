@@ -13,7 +13,7 @@ This release candidate intentionally freezes new feature work. The goal is stabi
 - Enter inserts selected phrase.
 - Space inserts when search is empty.
 - Space remains a normal character after a search term has been entered.
-- Esc closes Picker without changing the target field.
+- Esc hides Picker without changing the target field.
 - Previous clipboard content is restored after successful insertion.
 - If automatic paste fails, phrase stays in clipboard for manual Ctrl+V.
 - Rapid repeated activation does not start overlapping paste transactions.

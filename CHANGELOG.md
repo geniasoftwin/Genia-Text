@@ -1,3 +1,15 @@
+# GeniaText 0.7.0-RC1
+
+## Release candidate
+- Promoted the verified 0.7.0-beta.1 baseline to RC1 with release/package metadata `0.7.0-rc.1`.
+- Clarified Picker help text so Escape is described as hiding the Picker; runtime behavior is unchanged and GeniaText continues running in the tray.
+- Automated Release build/self-test gate passes: 18 passed, 0 failed.
+- Manual RC smoke/regression checks covered the standard editor, Editor Pro, recycle bin/recovery, backup browser, hotkey/Picker/paste, tray behavior, and the portable package.
+
+## Core Guard
+- Frozen Core 0.6.5 Final RC1 files are unchanged.
+- Phrase JSON schema and Core hotkey/paste/storage behavior are unchanged.
+
 # GeniaText 0.7.0-beta.1
 
 ## Beta freeze

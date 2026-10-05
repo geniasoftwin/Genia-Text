@@ -1,4 +1,4 @@
-# GeniaText 0.7.0-beta.1 field-test checklist
+# GeniaText 0.7.0-RC1 field-test checklist
 
 Test on Windows 10 or 11 with the .NET 10 SDK. Use a copy of real user data, not the only copy.
 
@@ -12,7 +12,7 @@ Test on Windows 10 or 11 with the .NET 10 SDK. Use a copy of real user data, not
 ## 2. Upgrade safety
 
 1. Copy the 0.6.5 `phrases.json` and `settings.json` into a disposable test folder.
-2. Start beta.1 against that copy.
+2. Start RC1 against that copy.
 3. Confirm every optional module, including all three Safety Pack switches, is OFF unless it was explicitly stored as enabled.
 4. Confirm phrases, order, categories, Favorites, and existing feature settings are preserved.
 
@@ -20,7 +20,7 @@ Test on Windows 10 or 11 with the .NET 10 SDK. Use a copy of real user data, not
 
 - Run section B of `TEST-PLAN.md` in Notepad, a browser, a messenger/editor, and one Electron application.
 - Verify Enter, Space, mouse double-click, clipboard restoration, rapid activation protection, phrase ordering, import/export, and portable storage.
-- Treat any regression here as an beta blocker.
+- Treat any regression here as an RC blocker.
 
 ## 4. Editor Pro module
 

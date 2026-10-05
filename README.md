@@ -1,11 +1,15 @@
-# GeniaText 0.7.0-beta.1
+# GeniaText 0.7.0-RC1
 
 Windows WPF utility for fast insertion of user-created text phrases.
 
 Core workflow remains intentionally small:
 `Ctrl+Space -> choose phrase -> Enter or Space -> paste into the original field`.
 
-This beta build continues the modular model introduced in 0.6.5. Every optional module is disabled by default and lives under **Настройки -> Возможности**.
+This RC1 build continues the modular model introduced in 0.6.5. Every optional module is disabled by default and lives under **Настройки -> Возможности**.
+
+## RC1: release candidate
+
+RC1 promotes the verified 0.7.0-beta.1 baseline with release/package metadata updated to `0.7.0-rc.1`. The feature set remains frozen. The only RC1 production UI change clarifies that Escape hides the Picker rather than exits the tray application; Core 0.6.5 Final RC1 remains unchanged.
 
 ## Beta.1: feature freeze
 
@@ -63,7 +67,7 @@ Enable **Редактор Pro** to add a separate batch-editing window. It can:
 
 Duplicate search is read-only: it selects matches but never deletes anything. The module does not participate in the hotkey, Picker or paste path.
 
-This beta is the frozen feature baseline for the 0.7.0 release line and does not replace the 0.6.5 Final RC1 baseline until the Windows checklist passes.
+RC1 is the release-candidate baseline for the 0.7.0 release line. Core 0.6.5 Final RC1 remains the frozen Core baseline.
 
 Alpha.2 also gives the Picker search field and category filter the same 40 px height, with vertically centered text, selected values, and drop-down items. The styles are local to the Picker and do not alter editor/settings controls.
 
@@ -74,7 +78,7 @@ Alpha.6 reduces the left padding of text fields and asks WPF to decode the Picke
 ## Build verification
 Run `build-and-test.cmd`. The build is compiled in Release with warnings treated as errors and then dependency-free self-tests run.
 
-See `BETA-TEST-CHECKLIST.md` for the required Windows test pass.
+See `BETA-TEST-CHECKLIST.md` for the RC1 Windows regression checklist.
 
 ## Compact portable build
 Run `build-portable.cmd`. It first runs the build/self-test gate, then creates a self-contained single-file Windows x64 package under `artifacts` containing:

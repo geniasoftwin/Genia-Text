@@ -1,4 +1,4 @@
-# GeniaText 0.7.0-beta.1 static validation
+# GeniaText 0.7.0-RC1 static validation
 
 Performed in the packaging environment before creating the test source archive.
 
@@ -9,7 +9,7 @@ Performed in the packaging environment before creating the test source archive.
 - All 45 referenced WPF event-handler bindings were found in their matching code-behind files.
 - All 28 production C# files passed a comment/string-aware structural brace check.
 - All 34 declared XAML resource keys resolve across 198 `StaticResource` references.
-- Version metadata and portable/release script versions are consistent at `0.7.0-beta.1`. Backup timestamps use `dd.MM.yyyy HH:mm:ss`.
+- Version metadata and portable/release script versions are consistent at `0.7.0-rc.1`. Backup timestamps use `dd.MM.yyyy HH:mm:ss`.
 - The application icon remains a valid 10-resolution Windows ICO and the source PNG remains valid.
 - The Picker header explicitly decodes `GeniaText.png` at 32 px; the title-bar image snaps the 16 px icon to device pixels.
 - Shared fields apply one 5 px visual left inset in the template while `TextBox.Padding` remains zero, preventing duplicate text-metric shrinkage. Inherited layout rounding covers fractional display scaling.
