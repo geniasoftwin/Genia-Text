@@ -6,7 +6,7 @@ $ErrorActionPreference = 'Stop'
 
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $project = Join-Path $root 'GeniaText\GeniaText.csproj'
-$version = '0.7.0-beta.1'
+$version = '0.7.0-rc.1'
 $artifacts = Join-Path $root 'artifacts'
 $publishOut = Join-Path $artifacts "publish-$RuntimeIdentifier"
 $packageOut = Join-Path $artifacts "GeniaText-$version-portable-$RuntimeIdentifier"

@@ -3,7 +3,7 @@ $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $project = Join-Path $root 'GeniaText\GeniaText.csproj'
 $solution = Join-Path $root 'GeniaText.sln'
 $tests = Join-Path $root 'GeniaText.Tests\GeniaText.Tests.csproj'
-$version = '0.7.0-beta.1'
+$version = '0.7.0-rc.1'
 $out = Join-Path $root "artifacts\GeniaText-$version"
 
 if ($null -eq (Get-Command dotnet -ErrorAction SilentlyContinue)) { throw '.NET 10 SDK was not found.' }
