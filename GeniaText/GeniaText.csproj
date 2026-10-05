@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <EnableWindowsTargeting Condition="'$(OS)' != 'Windows_NT'">true</EnableWindowsTargeting>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LangVersion>14.0</LangVersion>
+    <AssemblyName>GeniaText</AssemblyName>
+    <RootNamespace>GeniaText</RootNamespace>
+    <ApplicationIcon>Assets\GeniaText.ico</ApplicationIcon>
+    <Version>0.7.0-beta.1</Version>
+    <AssemblyVersion>0.7.0.0</AssemblyVersion>
+    <FileVersion>0.7.0.0</FileVersion>
+    <Product>GeniaText</Product>
+    <Company>GeniaText</Company>
+    <Description>Быстрый выбор и вставка текстовых шаблонов.</Description>
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\GeniaText.ico" />
+    <Resource Include="Assets\GeniaText.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- The marker is copied only by the portable publish profile/script. -->
+    <None Update="GeniaText.portable">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory Condition="'$(GeniaTextPortableBuild)' == 'true'">Always</CopyToPublishDirectory>
+      <!-- The app detects portable mode by this physical marker, so keep it outside the single-file bundle. -->
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </None>
+  </ItemGroup>
+
+</Project>

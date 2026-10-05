@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LangVersion>14.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\GeniaText\Models\AppSettings.cs" Link="Models\AppSettings.cs" />
+    <Compile Include="..\GeniaText\Models\PhraseEntry.cs" Link="Models\PhraseEntry.cs" />
+    <Compile Include="..\GeniaText\Features\SmartTemplateService.cs" Link="Features\SmartTemplateService.cs" />
+    <Compile Include="..\GeniaText\Features\AdvancedSearchService.cs" Link="Features\AdvancedSearchService.cs" />
+    <Compile Include="..\GeniaText\Features\AppProfileService.cs" Link="Features\AppProfileService.cs" />
+    <Compile Include="..\GeniaText\Features\EditorProService.cs" Link="Features\EditorProService.cs" />
+    <Compile Include="..\GeniaText\Features\SafetyPackService.cs" Link="Features\SafetyPackService.cs" />
+    <Compile Include="..\GeniaText\Features\SettingsSanitizer.cs" Link="Features\SettingsSanitizer.cs" />
+  </ItemGroup>
+</Project>
