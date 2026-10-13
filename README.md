@@ -40,6 +40,28 @@ GeniaText 0.7.0 remains the free functional baseline of the project. If paid Pro
 - Safe import preview.
 - Optional modules controlled from **Настройки -> Возможности**.
 
+## Screenshots
+
+### Phrase Picker
+
+![GeniaText Phrase Picker](docs/screenshots/picker.png)
+
+### Phrase management
+
+![GeniaText phrase management](docs/screenshots/phrase-manager.png)
+
+### Optional modules
+
+![GeniaText optional modules](docs/screenshots/settings-modules.png)
+
+### Editor Pro
+
+![GeniaText Editor Pro](docs/screenshots/editor-pro.png)
+
+### Recovery and backups
+
+![GeniaText recovery and backups](docs/screenshots/recovery.png)
+
 ## Portable mode
 
 The portable package contains exactly two files:
