@@ -1,8 +1,11 @@
-# Security audit — GeniaText 0.7.0-RC1
+# Security audit — GeniaText 0.7.0
 
 Статический аудит восстановленной/улучшенной кодовой базы. Он дополняет, но не заменяет динамическое тестирование на Windows.
 
 
+## 0.7.0 delta
+
+Stable promotes the verified RC1 by removing the prerelease version label and updating release documentation. No production behavior, security boundary, recovery path, storage format, network, clipboard, hotkey, paste, licensing, edition gate, or frozen Core behavior was added or changed.
 ## 0.7.0-RC1 delta
 
 RC1 changes release/version metadata and Picker help text only relative to beta.1. No security boundary, recovery path, storage format, network, clipboard, hotkey, paste, or frozen Core behavior changed.

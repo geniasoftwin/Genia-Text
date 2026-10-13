@@ -1,4 +1,4 @@
-# GeniaText 0.7.0-RC1 compact portable build
+# GeniaText 0.7.0 compact portable build
 
 Run `build-portable.cmd` on Windows with the .NET 10 SDK installed.
 

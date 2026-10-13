@@ -1,3 +1,16 @@
+# GeniaText 0.7.0
+
+## Stable release
+- Promoted the verified 0.7.0-RC1 build to Stable with version/package metadata `0.7.0`.
+- No production behavior changes were introduced after RC1.
+- All current features remain available without licensing or edition restrictions.
+- Optional modules remain user-controlled and disabled by default where applicable.
+- Automated Release build/self-test gate passes: 18 passed, 0 failed.
+
+## Core Guard
+- Frozen Core 0.6.5 Final RC1 files remain unchanged.
+- Phrase JSON schema and Core hotkey/paste/storage behavior remain unchanged.
+
 # GeniaText 0.7.0-RC1
 
 ## Release candidate

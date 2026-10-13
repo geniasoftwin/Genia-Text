@@ -1,4 +1,4 @@
-# GeniaText 0.7.0-RC1 architecture
+# GeniaText 0.7.0 architecture
 
 The design rule is: **optional features must not change the core path while disabled**.
 
