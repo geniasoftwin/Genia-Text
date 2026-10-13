@@ -1,0 +1,98 @@
+GeniaText Freeware and Source-Available License
+Version 1.0
+
+Copyright (c) 2026 GeniaSoftWin
+All rights reserved.
+
+1. APPLICATION USE
+
+The official prebuilt GeniaText 0.7.0 application may be used free of charge
+for personal, educational, non-commercial, and commercial purposes.
+
+No activation, subscription, license key, or payment is required to use the
+features included in the official GeniaText 0.7.0 release.
+
+These usage rights for the official GeniaText 0.7.0 application are intended
+to remain available indefinitely, provided that the user complies with this
+license.
+
+2. REDISTRIBUTION OF THE OFFICIAL APPLICATION
+
+You may redistribute the official, unmodified GeniaText 0.7.0 portable
+package free of charge, provided that:
+
+- the official package is not modified;
+- the GeniaText name is preserved;
+- this license text accompanies the redistributed package or is clearly
+  provided alongside it;
+- the software itself is not sold, sublicensed, or offered as a paid product;
+- you do not claim authorship of GeniaText;
+- you do not imply endorsement, partnership, or official status without
+  written permission from the copyright holder.
+
+The official portable package may remain exactly as published by GeniaSoftWin.
+The license file does not need to be inserted inside the ZIP archive if it is
+distributed alongside the archive.
+
+3. SOURCE CODE
+
+The GeniaText source code is publicly visible for inspection, learning,
+security review, and private reference.
+
+You may make private modifications or private builds for your own use.
+
+You may not, without prior written permission from the copyright holder:
+
+- redistribute the GeniaText source code;
+- publish modified source code;
+- publish forks or derivative source distributions;
+- distribute modified or unofficial GeniaText binaries;
+- sublicense the source code;
+- sell or commercially redistribute the source code;
+- represent a modified build as an official GeniaText release.
+
+Public availability of the source code does not make GeniaText open source.
+
+4. OWNERSHIP
+
+All copyright, ownership rights, and intellectual property rights in GeniaText
+remain with GeniaSoftWin and the respective copyright holders.
+
+No ownership rights are transferred by this license.
+
+5. NAME AND BRANDING
+
+The GeniaText name, application identity, icons, branding, and official release
+designation may not be used to present modified software as an official
+GeniaText product without written permission.
+
+6. FUTURE VERSIONS
+
+Future versions of GeniaText may be distributed under different licensing
+terms.
+
+Nothing in future licensing changes removes the usage rights granted by this
+license to users of the official GeniaText 0.7.0 release.
+
+7. NO WARRANTY
+
+GENIATEXT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR
+OTHER LIABILITY ARISING FROM THE USE OF OR INABILITY TO USE THE SOFTWARE.
+
+8. TERMINATION
+
+The permissions granted by this license terminate automatically if you violate
+its terms.
+
+Upon termination, you must stop distributing GeniaText and any unauthorized
+copies or derivative works.
+
+9. CONTACT
+
+Permission for redistribution, modification, derivative works, commercial
+distribution, or other uses not covered by this license may be requested from
+the copyright holder through the official GeniaText repository.
